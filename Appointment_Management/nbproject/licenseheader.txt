@@ -1,0 +1,9 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Blake Sutton
+${licensePrefix}Student ID: #001109490
+${licensePrefix}C195 - Software II Performance Assessment
+<#if licenseLast??>
+${licenseLast}
+</#if>

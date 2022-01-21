@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="224.0" prefWidth="550.0" style="-fx-background-color: lightsteelblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ReportAppointmentTypeController">
+   <children>
+      <Label layoutX="12.0" layoutY="14.0" text="Appointment Count By Type and Month">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="monthCombo" layoutX="48.0" layoutY="87.0" onAction="#changeMonth" prefHeight="25.0" prefWidth="200.0" />
+      <ComboBox fx:id="typeCombo" layoutX="303.0" layoutY="87.0" onAction="#changeType" prefWidth="200.0" />
+      <Label layoutX="121.0" layoutY="59.0" text="Month">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="384.0" layoutY="59.0" text="Type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="158.0" text="Total Number:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="countTotal" layoutX="303.0" layoutY="159.0" />
+      <Button layoutX="471.0" layoutY="180.0" mnemonicParsing="false" onAction="#backButton" prefHeight="27.0" prefWidth="64.0" text="Back" />
+      <Label fx:id="userIdLabel" layoutX="14.0" layoutY="193.0" text="Label" />
+   </children>
+</AnchorPane>
